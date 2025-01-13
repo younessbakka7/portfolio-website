@@ -50,7 +50,7 @@ import { useState } from 'react';
     <div className='fixed '>
     <ul className='model'>
         <li>
-            <button className='fa-solid fa-xmark fa-2x'   style={{fontSize:"20px"}} onClick={() => {
+            <button className='fa-solid fa-xmark fa-2x icon-close'   onClick={() => {
                 setshowmodel(false)
             }}></button> 
         </li>

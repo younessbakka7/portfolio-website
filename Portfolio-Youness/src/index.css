@@ -62,6 +62,12 @@ a:hover{
 button{
   all: unset;
 }
+button:hover{
+  cursor: pointer;
+}
+button:active{
+  scale: 0.95;
+}
 
 
 

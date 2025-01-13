@@ -34,7 +34,9 @@ header.flex .menu{
     display: none;
 }
 
-/*pop up  */
+/*=================================
+    pop up  
+==================================*/
 header .fixed{
     position: fixed;
     inset :0;  /*top / right /bottom / left */
@@ -65,7 +67,9 @@ header .fixed ul.model{
    
   } 
 
-/*none boreder last li*/
+/*=================================
+/*none boreder last li
+==================================*/
 header .fixed ul.model li:last-child{
  border-bottom: none;
  padding-bottom: 0.77rem;
@@ -79,9 +83,13 @@ header .fixed ul.model li{
 
 }
 header .fixed ul.model li e{
-font-size: 1rem;
+font-size: 10rem;
 
 }
+
+/*=================================
+ btn Close sandwich Menu
+==================================*/
 header .fixed ul.model li:first-child{
 text-align: right;
 border: none;
@@ -89,6 +97,50 @@ padding-bottom: 0.77rem;
 padding-top: 0.5rem;
 }
 
+/*=================================
+iconHeader
+==================================*/
+
+header.flex .fa-solid.fa-bars,
+header  .fa-solid.fa-moon.fa-2x {
+ background-color:var(--bgheader) ;
+ height: 2rem;
+ width: 2rem;
+ text-align: center;
+border-radius: 50%;
+color: var(--title);
+border: 1px solid rgba(244, 165, 96, 0.249);
+}
+/*=================================
+iconHeader Hover
+==================================*/
+header.flex .fa-solid.fa-bars:hover,
+header  .fa-solid.fa-moon.fa-2x:hover {
+    color: var(--title);
+    border: 1px solid rgba(244, 165, 96);
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.icon-close{
+  font-size: 1rem;
+  color:var(--title) ;
+
+ }
+.icon-close:hover{
+  font-size: 1.3rem;
+  transition: 0.3s;
+  color: crimson;
+  rotate: 180deg;
+
+
+ }
+
+
+/*=================================
+Responsive desubg media query
+==================================*/
 
 @media(max-width : 700px){
     header.flex nav{
@@ -102,9 +154,4 @@ padding-top: 0.5rem;
 
     
 }
-@media(min-width: 700px) {
-    header.flex .icon-list2 {
-        display: none;
-    }
 
-}
