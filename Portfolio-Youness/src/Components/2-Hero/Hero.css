@@ -1,0 +1,30 @@
+section.Hero{
+   margin-top: 3rem; 
+}
+/*take grand width leftSection als rightSection  */
+section.Hero .leftSection{
+flex-grow: 1;
+}
+/*image youness*/
+section.Hero .avatar{
+    border-radius: 50%;
+    height: 80px;
+    width: 88px;
+    border-radius: 50%;
+    border: 1px solid darkorange;
+    padding: 1px;
+    box-shadow: 2px 2px 40px, rgb(233,230,230,0.586) inset ;
+    gap: 0.6rem;
+    
+}
+/*verified*/
+section.Hero .icon-verified{
+   color: var(--blue);
+   font-size: 1.1rem;
+   margin-bottom: 0.3rem;
+}
+/*perent-avatar.flex align-items: flex-end; */
+section.Hero .perent-avatar.flex {
+    align-items: flex-end;
+}
+
